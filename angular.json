@@ -65,7 +65,8 @@
               "buildTarget": "AppAngular:build:production"
             },
             "development": {
-              "buildTarget": "AppAngular:build:development"
+              "buildTarget": "AppAngular:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +74,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "AppAngular:build"
+            "buildTarget": "AppAngular:build",
+            "proxyConfig": "proxy.conf.json"
           }
         },
         "test": {
@@ -96,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "152f6f1a-a179-404e-93fa-2ef193ab80dd"
   }
 }
